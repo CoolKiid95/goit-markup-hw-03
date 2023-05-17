@@ -22,7 +22,7 @@ ul {
   color: #2196f3;
   text-decoration: none;
   letter-spacing: 0.03em;
-  padding: 30px;
+  padding: 200px;
 }
 .link {
   font-family: 'Roboto';
@@ -209,16 +209,14 @@ header  {
   height: 80px;
   left: 0px;
   top: 0px;
-  padding: 0;
 }
 header nav {
 display: flex;
 align-items: center;
-gap: 100px;
 }
 header nav .header-epc{
   display: flex;
-  gap: 80px;
+  gap: 50px;
 }
 header nav .header-contacts {
 display: flex;
@@ -234,22 +232,28 @@ gap: 80px;
 }
 .benefits {
 align-items: flex-start;
-justify-content: space-evenly;
+justify-content: space-between;
 display: flex;
-flex-wrap: nowrap;
-gap: 20px;
+gap: 50px;
+ padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
+
 }
 .section-a-que .container{
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: space-between;
   flex-direction: row;
 }
 .section-a-que .container ul {
   width: 360px;
-  
+  display: flex;
+  gap: 20px;
+   padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 
 

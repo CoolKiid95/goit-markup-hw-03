@@ -22,7 +22,6 @@ ul {
   color: #2196f3;
   text-decoration: none;
   letter-spacing: 0.03em;
-  padding: 200px;
 }
 .link {
   font-family: 'Roboto';
@@ -42,24 +41,22 @@ ul {
   color: #757575;
   text-decoration: none;
 }
-.link:hover {
+.link:hover,
+.link2:hover,
+.link:focus,
+.link2:focus .link:active {
   color: #2196f3;
   text-decoration: none;
 }
-/* TODO: Hace falta el active, para que quede azul cuando se esta en la pagina 
-.link:active {
-    color: #2196F3;
-} */
 .link:active {
   color: #2196f3;
 }
-.link2:hover {
+*/ .link:active {
   color: #2196f3;
-  text-decoration: none;
 }
+
 .main-title {
   color: #ffffff;
-  
 }
 .main-button {
   background-color: #2196f3;
@@ -202,62 +199,69 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-header  {
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  width: 1200px;
+  padding-left: 94px;
 }
 header nav {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
-header nav .header-epc{
+header nav .header-epc {
   display: flex;
   gap: 50px;
 }
-header nav .header-contacts {
-display: flex;
-gap: 80px;
+header .header-contacts {
+  display: flex;
+  gap: 80px;
 }
 .main-section {
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding: 200px;
   text-align: center;
 }
 .section {
-  padding: 94px 0;
+  padding: 94px 0 0;
 }
 .benefits {
-align-items: flex-start;
-justify-content: space-between;
-display: flex;
-gap: 50px;
- padding-left: 50px;
-  padding-right: 50px;
-  margin-right: 80px;
-  margin-left: 80px;
-
+  align-items: flex-start;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 94px;
 }
-.section-a-que .container{
+.benefits li {
+  width: 240px;
+}
+.section-a-que ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.section-team {
+  background-color: #F5F4FA;
+}
+.team {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-}
-.section-a-que .container ul {
-  width: 360px;
-  display: flex;
-  gap: 20px;
-   padding-left: 50px;
-  padding-right: 50px;
-  margin-right: 80px;
-  margin-left: 80px;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 
-//* main .container .main-section {
+/* main .container .main-section {
   background-color: #2F303A;
   display: block;
   position: absolute;
@@ -275,4 +279,4 @@ footer .container  {
   left: 0px;
   top: 2158px;
 }
-*/ 
+*/

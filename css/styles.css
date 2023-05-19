@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@1,100&display=swap');
+:root {
+  --container-padding: calc((100% - 1200px) / 2);
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -158,6 +161,7 @@ ul {
   color: #2196f3;
   text-decoration: none;
   letter-spacing: 0.03em;
+  
 }
 .footer-address {
   font-family: 'Roboto';
@@ -209,8 +213,8 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  width: 1200px;
-  padding-left: 94px;
+  padding: 0 var(--container-padding);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 header nav {
   display: flex;
@@ -227,8 +231,9 @@ header .header-contacts {
 }
 .main-section {
   background-color: #2f303a;
-  padding: 200px;
+  padding: 200px var(--container-padding);
   text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .section {
   padding: 94px 0 0;
@@ -261,9 +266,14 @@ header .header-contacts {
 }
 footer {
   background-color: #2F303A;
-  padding: px ;
+  padding: 94px var(--container-padding);
+  height: 150px;
+  
 }
-address {
+address .footer-contacts {
   display: block;
   padding: 5px 0;
+}
+address .footer-address:hover {
+  color: #ffffff;
 }
